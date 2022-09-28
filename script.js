@@ -2,7 +2,8 @@
 
 - milimetro (mm)
 - centímetro (cm)
-- decímetro (dam)
+- decímetro (dm)
+- decâmetros (dam)
 - hectômetro (hm)
 - quilômetro (km)
 
@@ -13,7 +14,7 @@ O programa também deve exibir uma mensagem de "Opção inválida" caso o usuár
 
 let valor = prompt("Digite um valor em metros? ");
 let opcao = prompt(
-  "1- Milimetro(mm) \n2- Centímetro(cm) \n3- Decímetro(dam) \n4- Hectômetro(hm) \n5- Quilômetro(km)"
+  "1- Milimetro(mm) \n2- Centímetro(cm) \n3- Decímetro(dm) \n6- Decâmetros(dam) \n5- Hectômetro(hm) \n6- Quilômetro(km)"
 );
 
 let valorConvertindo = parseFloat(valor);
@@ -38,18 +39,25 @@ switch (opcaoNova) {
   case 3:
     conversao = valorConvertindo * 10;
     alert(
-      `O valor de ${valorConvertindo} metros foi convertindo em ${conversao} dam`
+      `O valor de ${valorConvertindo} metros foi convertindo em ${conversao} dm`
     );
     break;
 
   case 4:
+    conversao = valorConvertindo / 10;
+    alert(
+      `O valor de ${valorConvertindo} metros foi convertindo em ${conversao} dam`
+    );
+    break;
+
+  case 5:
     conversao = valorConvertindo / 100;
     alert(
       `O valor de ${valorConvertindo} metros foi convertindo em ${conversao} hm`
     );
     break;
 
-  case 5:
+  case 6:
     conversao = valorConvertindo / 1000;
     alert(
       `O valor em ${valorConvertindo} metros foi convertindo em ${conversao} km`
