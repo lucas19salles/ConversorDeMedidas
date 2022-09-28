@@ -14,7 +14,7 @@ O programa também deve exibir uma mensagem de "Opção inválida" caso o usuár
 
 let valor = prompt("Digite um valor em metros? ");
 let opcao = prompt(
-  "1- Milimetro(mm) \n2- Centímetro(cm) \n3- Decímetro(dm) \n6- Decâmetros(dam) \n5- Hectômetro(hm) \n6- Quilômetro(km)"
+  "1- Milimetro(mm) \n2- Centímetro(cm) \n3- Decímetro(dm) \n4- Decâmetros(dam) \n5- Hectômetro(hm) \n6- Quilômetro(km)"
 );
 
 let valorConvertindo = parseFloat(valor);
